@@ -4,31 +4,54 @@
 
 var onScreen = document.getElementById('on-screen');
 
-var i = 1;
-while (i <= 100) {
+//Loop while (Working fine)
+
+// var i = 1;
+// while (i <= 100) {
+//   //Multipli di 3 = Fizz
+//   if( i % 3 == 0 ) {
+//     var lista = onScreen.innerHTML;
+//     onScreen.innerHTML = lista + '<li>' + 'Fizz' + '</li>';
+//   }
+//
+//   //Multipli di 5 = Buzz
+//   else if( i % 5 == 0 ) {
+//     var lista = onScreen.innerHTML;
+//     onScreen.innerHTML = lista + '<li>' + 'Buzz' + '</li>';
+//   }
+//
+//   //Multipli di 3 e di 5 = FizzBuzz
+//   else if( (i % 3 == 0) && (i % 5 == 0) ) {
+//     var lista = onScreen.innerHTML;
+//     onScreen.innerHTML = '<li>' + 'FizzBuzz' + '</li>';
+//   }
+//
+//   else {
+//     var lista = onScreen.innerHTML;
+//     onScreen.innerHTML = lista + '<li>' + i + '</li>';
+//   }
+//
+//   //Interuzione del ciclo
+//   i++
+// }
+
+
+//Loop for() - also working
+
+for(var i = 1; i < 100; i++ ) {
   //Multipli di 3 = Fizz
-  if( i % 3 == 0 ) {
-    var lista = onScreen.innerHTML;
-    onScreen.innerHTML = lista + '<li>' + 'Fizz' + '</li>';
+  if ( i % 3 == 0 ) {
+    onScreen.innerHTML += '<li>' + 'Fizz' + '</li>';
   }
-
   //Multipli di 5 = Buzz
-  else if( i % 5 == 0 ) {
-    var lista = onScreen.innerHTML;
-    onScreen.innerHTML = lista + '<li>' + 'Buzz' + '</li>';
+  else if ( i % 5 == 0 ) {
+    onScreen.innerHTML += '<li>' + 'Buzz' + '</li>';
   }
-
   //Multipli di 3 e di 5 = FizzBuzz
-  else if( (i % 3 == 0) && (i % 5 == 0) ) {
-    var lista = onScreen.innerHTML;
-    onScreen.innerHTML = '<li>' + 'FizzBuzz' + '</li>';
+  else if ( (i % 3 == 0 ) && (i % 5 == 0) ) {
+    onScreen.innerHTML += '<li>' + 'FizzBuz' + '</li>';
   }
-
   else {
-    var lista = onScreen.innerHTML;
-    onScreen.innerHTML = lista + '<li>' + i + '</li>';
+    onScreen.innerHTML += '<li>' + i + '</li>';
   }
-
-  //Interuzione del ciclo
-  i++
 }
